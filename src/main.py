@@ -1,5 +1,6 @@
 import csv
 import os
+from typing import Tuple, List
 
 from models import Response
 
@@ -7,14 +8,18 @@ RESP_CSV_FILENAME = "./data/responses.csv"
 TEXTS_DIRECTORY = "./data/texts"
 
 
-def texts() -> tuple[str, list[str]]:
+def get_texts() -> tuple[list[str], list[list[str]]]:
     """
-    :return: text from ./data/texts/ directory. Format: Filename, Text
+    :return: Tuple of filenames and texts lists
     """
+    filenames = []
+    texts = []
     for filename in os.listdir(TEXTS_DIRECTORY):
         with open(os.path.join(TEXTS_DIRECTORY, filename), "r") as file:
             text = file.readlines()
-            yield filename, text
+            filenames.append(filename)
+            texts.append(text)
+    return filenames, texts
 
 
 def write_to_csv(filename: str, resp: Response) -> None:
@@ -28,9 +33,12 @@ def write_to_csv(filename: str, resp: Response) -> None:
 
 
 def main():
-    resp = Response()
-    # Writing results to Answer model
-    raise NotImplementedError
+    files, texts = get_texts()
+    for filename, text in zip(files, texts):
+        response = Response()
+        raise NotImplementedError # Getting results from application
+        write_to_csv(filename, response)
+
 
 if __name__ == '__main__':
     main()
