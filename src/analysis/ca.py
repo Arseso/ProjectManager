@@ -1,10 +1,12 @@
 from src.models import TextCA, Response
 from src.res.materials_CA import get_synonyms
-from src.preprocessing.import_text_CA import text_to_model_ca
+from src.preprocessing.ca import text_to_model_ca
 import src.env as env
 import nltk.stem.snowball as snowball
 
 stemmer = snowball.SnowballStemmer("english")
+
+
 def _preprocessed_text(text: list[str]) -> TextCA:
     """
     :param text: email as list of lines
@@ -67,6 +69,7 @@ def _ca_15(text: TextCA) -> float:
             return 1
     return 0
 
+
 def _ca_16(text: TextCA) -> float:
     """
     :param text: TextCA model
@@ -83,6 +86,7 @@ def _ca_16(text: TextCA) -> float:
                 return 1
     return 0
 
+
 def _ca_17(text: TextCA) -> float:
     """
     :param text: TextCA model
@@ -96,7 +100,7 @@ def _ca_17(text: TextCA) -> float:
     return 0
 
 
-def get_CA_metrics(resp: Response, text: list[str]) -> Response:
+def get_ca_metrics(resp: Response, text: list[str]) -> Response:
     """
     :param resp: Response object, where CA metrics will be changed
     :param text: text as list of lines to analyze
@@ -111,4 +115,3 @@ def get_CA_metrics(resp: Response, text: list[str]) -> Response:
     resp.CA16 = _ca_16(text)
     resp.CA17 = _ca_17(text)
     return resp
-
