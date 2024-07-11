@@ -41,23 +41,23 @@ class Response:
         elif module == "CA":
             return ["+" if metric == 1
                     else "-" if metric == 0
-            else "+-"
+                    else "+-"
                     for metric in
                     [self.CA1, self.CA11, self.CA12, self.CA13, self.CA14, self.CA15, self.CA16, self.CA17, self.CA2]]
         elif module == "ORG":
             return ["+" if metric == 1
                     else "-" if metric == 0
-            else "+-"
+                    else "+-"
                     for metric in [self.ORG1, self.ORG2, self.ORG22, self.ORG23, self.ORG24, self.ORG25, self.ORG3]]
         elif module == "VOC":
             return ["+" if metric == 1
                     else "-" if metric == 0
-            else "+-"
+                    else "+-"
                     for metric in [self.VOC1, self.VOC2, self.VOC3]]
         elif module == "GR":
             return ["+" if metric == 1
                     else "-" if metric == 0
-            else "+-"
+                    else "+-"
                     for metric in [self.GR1, self.GR2, self.GR3]]
 
 
@@ -84,6 +84,3 @@ class TextVOC:
     body_as_plain_text: str | None
     body_as_sentences: list[str] | None
     sentences_as_trees: list[list[Word]] | None
-
-
-
