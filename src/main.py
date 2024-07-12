@@ -5,6 +5,7 @@ from typing import Tuple, List
 from models import Response
 from analysis.ca import get_ca_metrics
 from analysis.org import get_org_metrics
+from src.analysis.voc import get_voc_metrics
 
 RESP_CSV_FILENAME = "./data/responses.csv"
 TEXTS_DIRECTORY = "./data/texts"
@@ -46,8 +47,8 @@ def main():
         # Getting results
         response = get_ca_metrics(Response(), text)
         response = get_org_metrics(response, text)
+        response = get_voc_metrics(response, text)
 
-        print(filename, response.values("CA"))
         _write_to_csv(filename, response)
 
 
