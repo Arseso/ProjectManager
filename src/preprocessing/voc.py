@@ -67,14 +67,20 @@ def text_to_model_voc(text: list[str]) -> TextVOC:
     return voc
 
 
-def voc_1_preprocessed_text(text: TextVOC) -> tuple[list[str], int]:
-    tokens = word_tokenize(text=text.body_as_plain_text)
+def voc_1_preprocessed_text(text: str, stemming: bool = True) -> tuple[list[str], int]:
+    """
+    :param text: TextVOC model
+    :param stemming: enable stemming
+    :return: preprocessed for VOC1 list of words, count of words
+    """
+    tokens = word_tokenize(text=text)
 
     tokens = [token for token in tokens if re.match(r'^[A-Za-z]+$', token)]
     words_count = len(tokens)
     stopwords = set(nltk.corpus.stopwords.words('english'))
     unique_filtered_tokens = set([token for token in tokens if token not in stopwords])
-
+    if not stemming:
+        return list(unique_filtered_tokens), words_count
     unique_filtered_tokens_stemmed = []
     stemmer = SnowballStemmer('english')
     for token in unique_filtered_tokens:
@@ -84,6 +90,10 @@ def voc_1_preprocessed_text(text: TextVOC) -> tuple[list[str], int]:
 
 
 def voc_2_preprocessed_text(text: TextVOC) -> tuple[list[str], int]:
+    """
+    :param text: TextVOC model
+    :return: preprocessed for VOC2 list of words, count of words
+    """
     tokens = word_tokenize(text=text.body_as_plain_text)
 
     tokens = [token for token in tokens if re.match(r'^[A-Za-z]+$', token)]
