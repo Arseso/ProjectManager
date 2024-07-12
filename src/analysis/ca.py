@@ -50,7 +50,6 @@ def _ca_14(text: TextCA) -> float:
     key_words = get_synonyms("writing")
     key_words = set([stemmer.stem(word) for word in key_words])
     key_words.add("writing")
-    print(key_words)
 
     for line in text.body:
         for word in key_words:

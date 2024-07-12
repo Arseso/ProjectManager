@@ -1,8 +1,13 @@
+import re
+
 import spacy
-from nltk import sent_tokenize
+from nltk import sent_tokenize, word_tokenize, SnowballStemmer
+import nltk
 
 from src.models import TextVOC, Word
 from src.preprocessing.ca import text_to_model_ca
+
+nltk.download('punkt')
 
 
 def _get_plain_text(body: list[str]) -> str:
@@ -60,3 +65,33 @@ def text_to_model_voc(text: list[str]) -> TextVOC:
         sentences_as_trees=_make_trees(sentences)
     )
     return voc
+
+
+def voc_1_preprocessed_text(text: TextVOC) -> tuple[list[str], int]:
+    tokens = word_tokenize(text=text.body_as_plain_text)
+
+    tokens = [token for token in tokens if re.match(r'^[A-Za-z]+$', token)]
+    words_count = len(tokens)
+    stopwords = set(nltk.corpus.stopwords.words('english'))
+    unique_filtered_tokens = set([token for token in tokens if token not in stopwords])
+
+    unique_filtered_tokens_stemmed = []
+    stemmer = SnowballStemmer('english')
+    for token in unique_filtered_tokens:
+        unique_filtered_tokens_stemmed.append(stemmer.stem(token))
+
+    return unique_filtered_tokens_stemmed, words_count
+
+
+def voc_2_preprocessed_text(text: TextVOC) -> tuple[list[str], int]:
+    tokens = word_tokenize(text=text.body_as_plain_text)
+
+    tokens = [token for token in tokens if re.match(r'^[A-Za-z]+$', token)]
+    words_count = len(tokens)
+
+    tokens_stemmed = []
+    stemmer = SnowballStemmer('english')
+    for token in tokens:
+        tokens_stemmed.append(stemmer.stem(token))
+
+    return tokens_stemmed, words_count

@@ -53,9 +53,9 @@ def _org_25(text: TextCA) -> float:
 
 def get_org_metrics(resp: Response, text: list[str]) -> Response:
     """
-    :param resp: Response object, where CA metrics will be changed
+    :param resp: Response object, where ORG metrics will be changed
     :param text: text as list of lines to analyze
-    :return: Response object with CA metrics
+    :return: Response object with ORG metrics
     """
     text = _preprocessed_text(text)
     resp.ORG22 = _org_22(text)
