@@ -10,6 +10,7 @@ from src.preprocessing.voc import text_to_model_voc, \
     voc_1_preprocessed_text, voc_2_preprocessed_text
 from src.res.materials_VOC import CEFR_DICTIONARY_DF, COLLOQUIAL_WORDS
 from src.res.api.languagetool import get_orthography_errors
+from src.res.wordsDegree.WordsDegree import get_degrees
 
 nltk.download('stopwords')
 
@@ -23,12 +24,12 @@ def _voc_1(text: TextVOC) -> float:
     :param text: TextCA model
     :return: float value of VOC 1 metric
     """
-    preprocessed_text, words_count = voc_1_preprocessed_text(text=text)
+    preprocessed_text, words_count = voc_1_preprocessed_text(text=text.body_as_plain_text, stemming=False)
     cerf_dict = CEFR_DICTIONARY_DF
-    cerf_levels = []
-    for token in preprocessed_text:
-        if token in cerf_dict.stemmed.values:
-            cerf_levels.append(cerf_dict[cerf_dict.stemmed == token].CEFR.values[0])
+    cerf_levels, undefined = get_degrees(preprocessed_text)
+    for token in undefined:
+        if token in cerf_dict.headword.values:
+            cerf_levels.append(cerf_dict[cerf_dict.headword == token].CEFR.values[0])
         else:
             cerf_levels.append("A1")
     cerf_counter = Counter(cerf_levels)
