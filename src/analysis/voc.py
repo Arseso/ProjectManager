@@ -2,7 +2,8 @@ import re
 from collections import Counter
 
 import nltk
-
+import tqdm
+from nltk.stem import WordNetLemmatizer
 from src.env import VOC2_PLUS_ORTH_THRESHOLD, VOC2_PLUS_COLL_PROPORTION, \
     VOC2_MINUS_COLL_PROPORTION, VOC2_MINUS_ORTH_THRESHOLD, VOC1_PLUS_UNIQUE_PROPORTION
 from src.models import TextVOC, Response
@@ -10,6 +11,7 @@ from src.preprocessing.voc import text_to_model_voc, \
     voc_1_preprocessed_text, voc_2_preprocessed_text
 from src.res.materials_VOC import CEFR_DICTIONARY_DF, COLLOQUIAL_WORDS
 from src.res.api.languagetool import get_orthography_errors
+from src.res.api.oxforddictionary import is_collocated_words
 from src.res.wordsDegree.WordsDegree import get_degrees
 
 nltk.download('stopwords')
@@ -71,6 +73,18 @@ def _voc_3(text: TextVOC) -> float:
     :param text: TextCA model
     :return: float value of VOC 3 metric
     """
+    errors = 0
+    for i in tqdm.trange(len(text.sentences_as_trees), desc="VOC3; Sentences processed"):
+        for word_object in text.sentences_as_trees[i]:
+            for child in word_object.children:
+                wnl = WordNetLemmatizer()
+                child = wnl.lemmatize(child)
+                if not is_collocated_words(word_object.head, child):
+                    errors += 1
+    print(f"VOC3; ERRORS:{errors}")
+    if errors > 2: return 0
+    if errors > 0: return 0.5
+    return 1
 
 
 def get_voc_metrics(resp: Response, text: list[str]) -> Response:

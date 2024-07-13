@@ -3,7 +3,7 @@ import os
 import pandas as pd
 from nltk import SnowballStemmer
 
-_CEFR_WORDLIST_PATH = './res/cefr_dicts/ENGLISH_CERF_WORDS.csv'
+_CEFR_WORDLIST_PATH = './res/dicts/ENGLISH_CERF_WORDS.csv'
 
 
 def _get_cefr_wordlist() -> pd.DataFrame:
