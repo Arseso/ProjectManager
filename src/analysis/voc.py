@@ -11,7 +11,7 @@ from src.preprocessing.voc import text_to_model_voc, \
     voc_1_preprocessed_text, voc_2_preprocessed_text
 from src.res.materials_VOC import CEFR_DICTIONARY_DF, COLLOQUIAL_WORDS
 from src.res.api.languagetool import get_orthography_errors
-from src.res.api.oxforddictionary import is_collocated_words
+from src.res.api.justtheworld import is_collocated_words
 from src.res.wordsDegree.WordsDegree import get_degrees
 
 nltk.download('stopwords')
@@ -77,8 +77,8 @@ def _voc_3(text: TextVOC) -> float:
     for i in tqdm.trange(len(text.sentences_as_trees), desc="VOC3; Sentences processed"):
         for word_object in text.sentences_as_trees[i]:
             for child in word_object.children:
-                wnl = WordNetLemmatizer()
-                child = wnl.lemmatize(child)
+                # wnl = WordNetLemmatizer()
+                # child = wnl.lemmatize(child)
                 if not is_collocated_words(word_object.head, child):
                     errors += 1
     print(f"VOC3; ERRORS:{errors}")
