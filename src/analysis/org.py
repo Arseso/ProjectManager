@@ -1,7 +1,7 @@
-from src.models import Response
+from models import Response
 
-from src.models import TextCA
-from src.preprocessing.ca import text_to_model_ca
+from models import TextCA
+from preprocessing.ca import text_to_model_ca
 
 
 def _preprocessed_text(text: list[str]) -> TextCA:

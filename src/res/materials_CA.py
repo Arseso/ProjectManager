@@ -4,19 +4,7 @@ from nltk.corpus import wordnet as wn
 import nltk
 
 GREETINGS = [
-    "Hello",
-    "Hi",
-    "Greetings",
-    "Good morning",
-    "Good afternoon",
-    "Good evening",
-    "Salutations",
-    "Hey",
-    "Dear",
-    "Respectful",
-    "Esteemed",
-    "Honorable",
-    "Respected"
+    "Dear"
 ]
 
 

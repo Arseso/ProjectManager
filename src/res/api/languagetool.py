@@ -1,8 +1,8 @@
 import requests
 import jsons
 
-from src.models import TextVOC
-from src.res.api.models import RequestLanguagetool, ResponseLanguagetool
+from models import TextVOC
+from res.api.models import RequestLanguagetool, ResponseLanguagetool
 
 URL = "https://api.languagetoolplus.com/v2/check"
 

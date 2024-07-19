@@ -1,7 +1,7 @@
-from src.models import TextCA, Response
-from src.res.materials_CA import get_synonyms
-from src.preprocessing.ca import text_to_model_ca
-import src.env as env
+from models import TextCA, Response
+from res.materials_CA import get_synonyms
+from preprocessing.ca import text_to_model_ca
+import env as env
 import nltk.stem.snowball as snowball
 
 stemmer = snowball.SnowballStemmer("english")

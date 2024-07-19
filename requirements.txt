@@ -1,7 +1,8 @@
-nltk~=3.8.1
-spacy~=3.7.5
-pandas~=2.2.2
-requests~=2.32.3
-jsons~=1.6.3
-beautifulsoup4~=4.12.3
-tqdm~=4.66.4
+beautifulsoup4==4.12.3
+jsons==1.6.3
+nltk==3.8.1
+pandas==2.2.2
+pytest==8.2.2
+Requests==2.32.3
+spacy==3.7.5
+tqdm==4.66.4
