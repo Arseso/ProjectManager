@@ -2,17 +2,19 @@ import re
 from collections import Counter
 
 import nltk
+import pandas as pd
 import tqdm
 from nltk.stem import WordNetLemmatizer
-from src.env import VOC2_PLUS_ORTH_THRESHOLD, VOC2_PLUS_COLL_PROPORTION, \
+import env
+from env import VOC2_PLUS_ORTH_THRESHOLD, VOC2_PLUS_COLL_PROPORTION, \
     VOC2_MINUS_COLL_PROPORTION, VOC2_MINUS_ORTH_THRESHOLD, VOC1_PLUS_UNIQUE_PROPORTION
-from src.models import TextVOC, Response
-from src.preprocessing.voc import text_to_model_voc, \
+from models import TextVOC, Response
+from preprocessing.voc import text_to_model_voc, \
     voc_1_preprocessed_text, voc_2_preprocessed_text
-from src.res.materials_VOC import CEFR_DICTIONARY_DF, COLLOQUIAL_WORDS
-from src.res.api.languagetool import get_orthography_errors
-from src.res.api.justtheworld import is_collocated_words
-from src.res.wordsDegree.WordsDegree import get_degrees
+from res.materials_VOC import CEFR_DICTIONARY_DF, COLLOQUIAL_WORDS
+from res.api.languagetool import get_orthography_errors
+from res.api.justtheworld import is_collocated_words
+from res.wordsDegree.WordsDegree import get_degrees
 
 nltk.download('stopwords')
 
@@ -73,14 +75,26 @@ def _voc_3(text: TextVOC) -> float:
     :param text: TextCA model
     :return: float value of VOC 3 metric
     """
+    errors_df = pd.DataFrame(columns=["head", "child"])
+
     errors = 0
+    stopwords = set(nltk.corpus.stopwords.words('english'))
     for i in tqdm.trange(len(text.sentences_as_trees), desc="VOC3; Sentences processed"):
         for word_object in text.sentences_as_trees[i]:
+            head = word_object.head.lower()
+            if not re.match(r'^[a-z]+$', head) or head in stopwords or head == env.COMPANY_NAME:
+                continue
             for child in word_object.children:
                 # wnl = WordNetLemmatizer()
                 # child = wnl.lemmatize(child)
-                if not is_collocated_words(word_object.head, child):
+
+                child = child.lower()
+                if not re.match(r'^[a-z]+$', child) or child in stopwords or child == env.COMPANY_NAME:
+                    continue
+                if not is_collocated_words(head, child):
+                    errors_df.loc[len(errors_df.index)] = [head, child]
                     errors += 1
+    errors_df.to_csv("./.cache/collocation_errors.csv", index=False, mode="a")
     print(f"VOC3; ERRORS:{errors}")
     if errors > 2: return 0
     if errors > 0: return 0.5

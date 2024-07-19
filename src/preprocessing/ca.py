@@ -1,5 +1,5 @@
-from src.models import TextCA
-from src.res.materials_CA import GREETINGS
+from models import TextCA
+from res.materials_CA import GREETINGS
 import re
 
 PATTERN_MAIL = r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"

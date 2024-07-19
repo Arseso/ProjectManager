@@ -4,8 +4,8 @@ import spacy
 from nltk import sent_tokenize, word_tokenize, SnowballStemmer
 import nltk
 
-from src.models import TextVOC, Word
-from src.preprocessing.ca import text_to_model_ca
+from models import TextVOC, Word
+from preprocessing.ca import text_to_model_ca
 
 nltk.download('punkt')
 
