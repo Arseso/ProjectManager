@@ -35,34 +35,72 @@ class Response:
     GR2: float = 0
     GR3: float = 0
 
-    def values(self, module: str = None) -> list[str]:
+    # Metrics
+
+    UNIQ_W_PROPORTION: float = 0
+    ORTHOGRAPHY_ERRORS: int = 0
+    COLLOQUIAL_WORDS: int = 0
+    COLLOCATION_ERRORS: int = 0
+
+    def values(self, module: str = None, as_num = False) -> list[str]:
         """
-        :param module: "CA", "ORG", "VOC", "GR"
+        :param module: "CA", "ORG", "VOC", "GR", "metrics"
+        :paeam as_num: if true, return module as float values
         :return: list of program responses for this module
         """
         if module is None:
             raise ValueError("Module must be provided")
-        elif module == "CA":
+        
+        # CA
+
+        elif module == "CA" and not as_num:
             return ["+" if metric == 1
                     else "-" if metric == 0
             else "+-"
                     for metric in
                     [self.CA1, self.CA11, self.CA12, self.CA13, self.CA14, self.CA15, self.CA16, self.CA17, self.CA2]]
-        elif module == "ORG":
+        
+        elif module == "CA" and as_num:
+            return [self.CA1, self.CA11, self.CA12, self.CA13, self.CA14, self.CA15, self.CA16, self.CA17, self.CA2]
+        
+
+        # ORG
+
+        elif module == "ORG" and not as_num:
             return ["+" if metric == 1
                     else "-" if metric == 0
             else "+-"
                     for metric in [self.ORG1, self.ORG2, self.ORG22, self.ORG23, self.ORG24, self.ORG25, self.ORG3]]
-        elif module == "VOC":
+        
+        elif module == "ORG" and as_num:
+            return [self.ORG1, self.ORG2, self.ORG22, self.ORG23, self.ORG24, self.ORG25, self.ORG3]
+        
+        # VOC
+
+        elif module == "VOC" and not as_num:
             return ["+" if metric == 1
                     else "-" if metric == 0
             else "+-"
                     for metric in [self.VOC1, self.VOC2, self.VOC3]]
-        elif module == "GR":
+        
+        elif module == "VOC" and as_num:
+            return [self.VOC1, self.VOC2, self.VOC3]
+        
+        # GR
+
+        elif module == "GR" and not as_num:
             return ["+" if metric == 1
                     else "-" if metric == 0
             else "+-"
                     for metric in [self.GR1, self.GR2, self.GR3]]
+        
+        elif module == "GR" and as_num:
+            return [self.GR1, self.GR2, self.GR3]
+        
+        # Metrics
+
+        elif module == "metrics":
+            return [self.UNIQ_W_PROPORTION, self.ORTHOGRAPHY_ERRORS, self.COLLOQUIAL_WORDS, self.COLLOCATION_ERRORS]
 
 
 @dataclass
