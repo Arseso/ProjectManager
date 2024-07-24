@@ -1,5 +1,5 @@
 COMPANY_NAME = "google"
-VACANCY_NAME = "project manager"
+VACANCY_NAME = ["project manager", "position"]
 EMAIL = "google_recruitment@google.com"
 VACANCY_RESPONSIBILITIES = [
     "plan",
