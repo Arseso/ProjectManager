@@ -3,6 +3,7 @@ from res.materials_CA import get_synonyms
 from preprocessing.ca import text_to_model_ca
 import env as env
 import nltk.stem.snowball as snowball
+import re
 
 stemmer = snowball.SnowballStemmer("english")
 
@@ -20,7 +21,7 @@ def _ca_11(text: TextCA) -> float:
     :param text: TextCA model
     :return: float value of CA 1.1 metric
     """
-    return 1 if len(text.greeting_name) > 0 else 0
+    return 1 if len(text.greeting_name) > 0 and not text.greeting_name.lower() in ["sir", "madam", "sir or madam"] else 0
 
 
 def _ca_12(text: TextCA) -> float:
@@ -48,16 +49,11 @@ def _ca_14(text: TextCA) -> float:
     :return: float value of CA 1.4 metric
     """
 
-    Изменить
-
-    key_words = get_synonyms("writing")
-    key_words = set([stemmer.stem(word) for word in key_words])
-    key_words.add("writing")
+    word = "writ"
 
     for line in text.body:
-        for word in key_words:
-            if word in line.lower():
-                return 1
+        if word in line.lower():
+            return 1
     return 0
 
 
