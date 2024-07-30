@@ -69,7 +69,7 @@ def text_to_model_voc(text: list[str]) -> TextVOC:
 
 def voc_1_preprocessed_text(text: str, stemming: bool = True) -> tuple[list[str], int]:
     """
-    :param text: TextVOC model
+    :param text: plain text
     :param stemming: enable stemming
     :return: preprocessed for VOC1 list of words, count of words
     """
