@@ -1,0 +1,14 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Senior Data Scientist position at DoubleJump. With my strong organizational and leadership skills, extensive experience in data analysis and visualization, and expertise in statistical analysis, I believe I would be a valuable addition to your team.
+
+In my current role as a Senior Data Scientist at ABC Company, I have successfully measured the success of experiments and optimized their performance through data-driven iteration. I have also created regular presentations for the leadership team, providing valuable insights and recommendations based on my analysis. Additionally, I have developed and maintained a suite of dashboards and reports for various teams within the organization, enabling data-driven decision-making.
+
+I hold a Bachelor's degree in Computer Science and have over 7 years of industry experience, with a focus on data analysis and visualization. I am proficient in SQL and have experience querying large and varied data sources. My expertise in statistical analysis allows me to interpret and analyze data using mathematical and statistical techniques.
+
+I am excited about the opportunity to join DoubleJump and contribute to the creation of world-class products. I am confident that my skills and experience make me a strong fit for this role. Thank you for considering my application.
+
+Sincerely,
+John Smith

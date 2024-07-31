@@ -1,0 +1,16 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Business Data Analyst position at Uncommon Purpose. With my strong background in data analysis and experience in B2B client-facing roles, I believe I would be a valuable asset to your team.
+
+In my previous roles as a Business Analyst and Data Scientist, I have gained extensive experience in creating data dictionaries, data models, and data flowcharts using tools such as Excel, SQL, and LucidChart. I have also worked closely with customers and delivery teams to develop integration solutions that are complete, stable, and highly supportable.
+
+I have a deep understanding of API's and API data representations, including JSON and XML. My expertise in data analysis, including data mining and data modeling, allows me to effectively analyze and map data across various sources and formats.
+
+I hold a Bachelor's degree in computer science and have a strong knowledge of Salesforce integration and application integration solutions. My excellent communication and problem-solving skills make me an ideal candidate for this role.
+
+Thank you for considering my application. I look forward to the opportunity to contribute to the success of Uncommon Purpose.
+
+Sincerely,
+John Smith

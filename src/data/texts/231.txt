@@ -1,0 +1,16 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Data Scientist position at XYZ Insurance. With my strong background in SQL database management, advanced programming skills, and experience in the P&C insurance industry, I believe I am well-suited for this role.
+
+In my current position as a Data Scientist at XYZ Corporation, I have successfully managed and analyzed large-scale health claims data, providing valuable insights for strategic decision-making. I have also developed advanced programming skills in SQL and SAS, allowing me to efficiently extract and analyze data from various sources.
+
+Furthermore, my post graduate degree in data science, along with my training in actuarial science and completed actuarial exams, have equipped me with a solid foundation in both data analysis and insurance principles. I am confident in my ability to effectively analyze industry data and financial results, as well as support the production of important reports such as the Health Claims Data Base (HCDB) Report.
+
+Additionally, my strong strategic thinking, risk assessment, and presentation skills make me a valuable asset to the economics & data policy team at XYZ Insurance. I am comfortable working independently or as part of a team, and I am adaptable to changing work volumes and timelines.
+
+Thank you for considering my application. I look forward to the opportunity to contribute to the success of XYZ Insurance as a Data Scientist.
+
+Sincerely,
+John Smith

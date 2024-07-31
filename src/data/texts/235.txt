@@ -1,0 +1,3 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+I am writing to express my interest in the Machine Learning Engineer position at Google. I hold a PhD in Computer Science and have experience working as a Software Engineer at Facebook and a Machine Learning Engineer at Microsoft. I am proficient in Python, Tensorflow, Keras, and PyTorch, and have a deep understanding of machine learning algorithms. I am passionate about using technology to solve complex problems and have a proven track record of developing and implementing machine learning models to drive business results. I am a quick learner, a strong problem-solver, and a team player. I am confident that my skills and experience make me a strong candidate for this position.

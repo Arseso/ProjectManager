@@ -1,0 +1,18 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Senior Data Scientist position at XYZ Technologies. With over 7 years of experience in the field, I am confident in my ability to contribute to your Data Science & AI CoE and drive innovation in the ATI industry.
+
+Throughout my career, I have gained strong expertise in deep learning, CUDA/TensorRT, and modern data compression. I have successfully delivered high-quality research, innovation, and engineering projects on time, always striving for excellence. My hands-on experience with OpenCV, SOD, and other computer vision libraries has allowed me to develop state-of-the-art solutions and integrate computer vision into industrial-level products.
+
+I have a strong background in biometrics, machine learning, and deep learning, and I am well-versed in Agile methodologies. My proficiency in machine learning frameworks such as TensorFlow, Keras, Pytorch, and Caffe has enabled me to develop cutting-edge solutions. Additionally, my published research in computer vision, image processing, and machine learning showcases my commitment to advancing the field.
+
+With a Master's degree in Computer Science specializing in AI/Computer Vision, I possess a solid foundation in advanced mathematics, image/video processing, computer vision, and AI/machine learning theories.
+
+I am excited about the opportunity to join XYZ Technologies and contribute to the company's mission of revolutionizing the ATI industry with Data Science AI Technology. I am eager to learn from and collaborate with the talented data science and engineering community at XYZ Technologies.
+
+Thank you for considering my application. I look forward to the possibility of discussing how my skills and qualifications align with your requirements.
+
+Sincerely,
+John Smith

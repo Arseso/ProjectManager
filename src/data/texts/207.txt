@@ -1,0 +1,14 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Data Scientist position at Deeplite. With my strong background in Python coding, deep learning frameworks, and data analysis, I believe I am wellsuited for this role.
+
+In my previous role as a data analyst at XYZ Company, I gained valuable experience in analyzing large datasets and extracting meaningful insights. I also developed strong coding skills in Python and utilized deep learning frameworks such as PyTorch and TensorFlow to build predictive models. These experiences have equipped me with the necessary skills to contribute to the development of innovative systems based on machine learning and deep learning.
+
+Furthermore, my current position as a machine learning engineer at ABC Corporation has allowed me to further enhance my expertise in deep learning and problemsolving. I have successfully utilized theoretical and empirical research to solve realworld problems and have collaborated effectively with crossfunctional teams.
+
+I am excited about the opportunity to join Deeplite and contribute to its mission of developing cuttingedge solutions. I am confident that my skills and qualifications make me a strong fit for this role. Thank you for considering my application.
+
+Sincerely,
+John Smith

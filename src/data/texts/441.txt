@@ -1,0 +1,14 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Data Science Delivery Manager position at Distilr. With my strong background in data analysis and machine learning, I believe I am well-suited for this role.
+
+In my current position as a Data Scientist at ABC Company, I have gained valuable experience in critically evaluating feedback from clients and driving the development of technical specifications. I have successfully organized and prioritized data research backlog, ensuring timely delivery of projects. Additionally, my strong knowledge of Python and SQL has allowed me to effectively analyze and interpret complex data sets.
+
+I am confident that my skills in data analysis, machine learning, and communication will enable me to excel in this role. I am a highly motivated individual with a passion for driving innovation in the hospitality industry. I thrive in fast-paced environments and am adept at problem-solving and collaborating with cross-functional teams.
+
+Thank you for considering my application. I look forward to the opportunity to contribute to the success of Distilr and drive the digital future in hospitality.
+
+Sincerely,
+John Smith

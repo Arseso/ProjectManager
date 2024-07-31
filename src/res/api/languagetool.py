@@ -22,6 +22,8 @@ def get_orthography_errors(text: TextVOC) -> int:
     :param text: text to check on orthography errors
     :return: number of orthography errors
     """
+    if not text.body_as_plain_text:
+        return 0
     if len(text.body_as_plain_text) > 1500:
         characters = ""
         errors = 0

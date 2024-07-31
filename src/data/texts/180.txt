@@ -1,0 +1,16 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Risk Analytics Tech Lead position at XYZ Analytics. With my strong background in data analysis and visualization, along with my experience as a Data Scientist at XYZ Analytics, I believe I am well-suited for this role.
+
+In my current position, I have successfully managed the development and reporting of metrics for the Risk organization, utilizing tools such as Looker to create data visualizations. I have also been instrumental in reimagining how performance and effectiveness of risk management controls are measured, bringing cohesion and standardization across the Square ecosystem of products.
+
+I have a proven track record of using data-driven strategies to drive change and gain support from key stakeholders and leadership. My strong analytical and problem-solving skills, coupled with my excellent communication and presentation abilities, have allowed me to effectively lead teams and influence decision-making processes.
+
+With a Master's degree in Data Science and over 5 years of relevant experience, I am confident in my ability to excel in this role. I am excited about the opportunity to contribute to XYZ Analytics' risk strategy and drive process improvements through data analysis and insights.
+
+Thank you for considering my application. I look forward to the opportunity to discuss how my skills and qualifications align with the needs of XYZ Analytics.
+
+Sincerely,
+John Smith

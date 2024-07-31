@@ -1,0 +1,3 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+I am writing to express my interest in the Senior Java Developer position at ABC Tech. With over 7 years of experience in Java development, I believe I am an excellent fit for this role. My professional experience includes creating scalable, reliable, and high-performance applications using Java, Spring, and Hibernate. I am also proficient in SQL and REST APIs. I look forward to the opportunity to contribute to your team.

@@ -1,0 +1,16 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Senior Manager, Supply Chain Analytics position at XYZ Corporation. With my extensive experience in data analysis and supply chain management, I believe I am well-suited for this role.
+
+In my current position as a Senior Data Scientist at GHI Company, I have successfully overseen the analysis of various supply chain KPIs and maintained monthly inventory governance tools using Power BI. I have also led the evolution of metrics reporting and the Executive S&OP process, ensuring effective communication with executive management.
+
+With a BA in Data Science and Analytics, I have a strong foundation in data-driven decision making. My working knowledge of SAP S4 and Integrated Business Planning (IBP) further enhances my ability to contribute to the success of XYZ Corporation.
+
+I am a self-starter with excellent Power BI, Power Point, and Excel skills. My consulting experience has honed my strategic thinking and problem-solving abilities. I am confident that my skills and qualifications make me a valuable asset to your organization.
+
+Thank you for considering my application. I look forward to the opportunity to discuss how I can contribute to the growth and success of XYZ Corporation.
+
+Sincerely,
+John Smith

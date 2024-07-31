@@ -1,0 +1,3 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+I am writing to apply for the AI Engineer position at Microsoft. I have a PhD in AI and have worked as a Data Scientist at Google and an AI Engineer at Apple. I am proficient in Python and TensorFlow and have a deep understanding of deep learning algorithms. I am passionate about using AI to solve complex problems and am excited about the opportunity to bring my skills to Microsoft. Thank you for considering my application.

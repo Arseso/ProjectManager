@@ -20,7 +20,7 @@ def _ca_11(text: TextCA) -> float:
     :param text: TextCA model
     :return: float value of CA 1.1 metric
     """
-    return 1 if len(text.greeting_name) > 0 else 0
+    return 1 if text.greeting_name else 0
 
 
 def _ca_12(text: TextCA) -> float:
@@ -36,6 +36,8 @@ def _ca_13(text: TextCA) -> float:
     :param text: TextCA model
     :return: float value of CA 1.3 metric
     """
+    if not text.body:
+        return 0
     for line in text.body:
         if env.COMPANY_NAME.lower() in line.lower():
             return 1
@@ -51,6 +53,9 @@ def _ca_14(text: TextCA) -> float:
     key_words = set([stemmer.stem(word) for word in key_words])
     key_words.add("writing")
 
+    if not text.body:
+        return 0
+
     for line in text.body:
         for word in key_words:
             if word in line.lower():
@@ -63,6 +68,9 @@ def _ca_15(text: TextCA) -> float:
     :param text: TextCA model
     :return: float value of CA 1.5 metric
     """
+    if not text.body:
+        return 0
+    
     for line in text.body:
         if env.VACANCY_NAME.lower() in line.lower():
             return 1
@@ -79,6 +87,9 @@ def _ca_16(text: TextCA) -> float:
         for syn in get_synonyms(word):
             key_words.add(stemmer.stem(syn))
 
+    if not text.body:
+            return 0
+
     for line in text.body:
         for word in key_words:
             if word in line.lower():
@@ -92,6 +103,10 @@ def _ca_17(text: TextCA) -> float:
     :return: float value of CA 1.7 metric
     """
     key_words = get_synonyms("thanks")
+
+    if not text.body:
+        return 0
+
     for line in text.body:
         for word in key_words:
             if stemmer.stem(word) in line.lower():
