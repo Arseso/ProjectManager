@@ -4,7 +4,7 @@ import re
 
 PATTERN_MAIL = r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
 PATTERN_GREETING = "|".join(re.escape(s) for s in GREETINGS)
-PATTERN_SIGNS = "|".join(re.escape(s) for s in SIGNS)
+PATTERN_SIGNS = "|".join(s for s in SIGNS)
 PATTERN_SIGN = r"^[A-Z][a-z]+ [A-Z][a-z]+$"
 
 
@@ -58,8 +58,8 @@ def _find_name_from_greeting(text: list[str]) -> tuple[str | None, list[str]]:
     :param text: list of lines from email
     :return: recipient's name from greeting, None if didn't find one
     """
-    pattern = rf"^({PATTERN_GREETING})\s*(.*),"
-    match = re.match(pattern, text[0])
+    pattern = rf"^({PATTERN_GREETING})\s*(.*?),"
+    match = re.search(pattern, text[0])
     if match:
         name = match.group(2)
         text[0] = re.sub(rf"^({PATTERN_GREETING})\s*(.*),", "", text[0])
@@ -83,7 +83,7 @@ def _find_sign(text: list[str]) -> str | None:
     """
 
     pattern = rf"({PATTERN_SIGNS}),\s*(.+)$"
-    match_word = re.match(pattern, text[-1])
+    match_word = re.search(pattern, text[-1])
     match_name = re.match(PATTERN_SIGN, text[-1])
     if match_word:
         name = match_word.group(2)

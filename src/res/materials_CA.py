@@ -8,7 +8,8 @@ GREETINGS = [
 ]
 
 SIGNS = [
-    "Sincerely"
+    "Sincerely",
+    "Best regards"
 ]
 
 
