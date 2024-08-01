@@ -1,10 +1,11 @@
 from models import TextCA
-from res.materials_CA import GREETINGS
+from res.materials_CA import GREETINGS, SIGNS
 import re
 
 PATTERN_MAIL = r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
 PATTERN_GREETING = "|".join(re.escape(s) for s in GREETINGS)
-PATTERN_SIGN = r"[A-Z][a-z]+ [A-Z][a-z]+"
+PATTERN_SIGNS = "|".join(re.escape(s) for s in SIGNS)
+PATTERN_SIGN = r"^[A-Z][a-z]+ [A-Z][a-z]+$"
 
 
 def _preprocessing_pipeline(text: list[str]) -> list[str]:
@@ -33,7 +34,8 @@ def _find_to(text: list[str]) -> tuple[str | None, list[str]]:
 
     if match:
         email = match.group(0)
-        return email, text[1:]
+        text[0] = ""
+        return email, text
     else:
         return None, text
 
@@ -45,7 +47,8 @@ def _find_subject(text: list[str]) -> tuple[str | None, list[str]]:
     """
     try:
         subj = text[0].split(": ", 1)[1]
-        return subj, text[:1]
+        text[0] = ""
+        return subj, text[1:]
     except IndexError:
         return None, text
 
@@ -55,10 +58,12 @@ def _find_name_from_greeting(text: list[str]) -> tuple[str | None, list[str]]:
     :param text: list of lines from email
     :return: recipient's name from greeting, None if didn't find one
     """
-    pattern = rf"^({PATTERN_GREETING})\s*(.*)"
+    pattern = rf"^({PATTERN_GREETING})\s*(.*),"
     match = re.match(pattern, text[0])
     if match:
-        return match.group(2).replace(",", ""), text[1:]
+        name = match.group(2)
+        text[0] = re.sub(rf"^({PATTERN_GREETING})\s*(.*),", "", text[0])
+        return  name, text
     else:
         return None, text
 
@@ -77,8 +82,16 @@ def _find_sign(text: list[str]) -> str | None:
     :return: sign from email, None if didn't find one
     """
 
-    if re.match(PATTERN_SIGN, text[-1]):
-        return text[-1], text[:-2]
+    pattern = rf"({PATTERN_SIGNS}),\s*(.+)$"
+    match_word = re.match(pattern, text[-1])
+    match_name = re.match(PATTERN_SIGN, text[-1])
+    if match_word:
+        name = match_word.group(2)
+        text[-1] = re.sub(pattern, "", text[-1])
+        return  name, text
+    elif match_name:
+        name = match_name.group(0)
+        return  name, text[:-2]
     else:
         return None, text
 
@@ -91,9 +104,13 @@ def text_to_model_ca(text: list[str]) -> TextCA:
     
     text = _preprocessing_pipeline(text)
     _to, text = _find_to(text)
+    text = _preprocessing_pipeline(text)
     _subj, text = _find_subject(text)
+    text = _preprocessing_pipeline(text)
     _sign, text = _find_sign(text)
+    text = _preprocessing_pipeline(text)
     _name, text = _find_name_from_greeting(text)
+    text = _preprocessing_pipeline(text)
     _body = _find_body(text)
     model = TextCA(
         to =_to,

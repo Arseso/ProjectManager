@@ -48,7 +48,8 @@ def _write_to_csv(filename: str, resp: Response) -> None:
                              "CA1", "CA1.1", "CA1.2", "CA1.3", "CA1.4", "CA1.5", "CA1.6", "CA1.7", "CA2",
                              "ORG1", "ORG2", "ORG2.2", "ORG2.3", "ORG2.4", "ORG2.5", "ORG3",
                              "VOC1", "VOC2", "VOC3",
-                             "GR1", "GR2", "GR3", "UNIQ_WORDS", "OR_ERR", "CLQ_WORDS", "CLC_ERRORS"])
+                             "GR1", "GR2", "GR3", "UNIQ_WORDS", "OR_ERR", "CLQ_WORDS", "CLC_ERRORS", 
+                             "prop_a1", "prop_a2", "prop_b1", "prop_b2", "prop_c1", "prop_c2",])
         writer.writerow([filename] + resp.values("CA", True) + resp.values("ORG", True) + resp.values("VOC", True) + resp.values("GR", True) + resp.values("metrics"))
 
 

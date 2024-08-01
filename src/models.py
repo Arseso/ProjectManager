@@ -42,6 +42,8 @@ class Response:
     COLLOQUIAL_WORDS: int = 0
     COLLOCATION_ERRORS: int = 0
 
+    CEFR_PROPORTIONS: tuple = None
+
     def values(self, module: str = None, as_num = False) -> list[str]:
         """
         :param module: "CA", "ORG", "VOC", "GR", "metrics"
@@ -100,7 +102,7 @@ class Response:
         # Metrics
 
         elif module == "metrics":
-            return [self.UNIQ_W_PROPORTION, self.ORTHOGRAPHY_ERRORS, self.COLLOQUIAL_WORDS, self.COLLOCATION_ERRORS]
+            return [self.UNIQ_W_PROPORTION, self.ORTHOGRAPHY_ERRORS, self.COLLOQUIAL_WORDS, self.COLLOCATION_ERRORS, *self.CEFR_PROPORTIONS]
 
 
 @dataclass

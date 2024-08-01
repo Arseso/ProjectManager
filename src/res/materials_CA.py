@@ -7,6 +7,10 @@ GREETINGS = [
     "Dear"
 ]
 
+SIGNS = [
+    "Sincerely"
+]
+
 
 def _synonyms_preprocessing(lemmas: set[str]) -> set[str]:
     """
