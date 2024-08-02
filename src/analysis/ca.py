@@ -55,6 +55,9 @@ def _ca_14(text: TextCA) -> float:
     if not text.body:
         return 0
 
+    if not text.body:
+        return 0
+
     for line in text.body:
         if word in line.lower():
             return 1
