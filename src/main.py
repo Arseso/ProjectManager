@@ -55,6 +55,11 @@ def _write_to_csv(filename: str, resp: Response) -> None:
 
 def main():
     files, texts = _get_texts()
+    # files, texts = ['393.txt'], [[
+    #     "To; google_recruitment@google.com",
+    #     "Subject: Application for Project Manager Position at Google",
+    #     "Dear Hiring Manager, I am writing to express my interest in the Mobile App Developer position at XYZ Company. I have a Master's degree in Computer Science and 3 years of experience in mobile app development. I am proficient in iOS, Android, Swift, Java, and Kotlin. I have excellent communication skills and the ability to work independently. I believe that my skills and qualifications make me a strong fit for this role. Thank you for considering my application. Best regards, Jane Doe"
+    # ]]
     for filename, text in zip(files, texts):
         # Getting results
         response = get_ca_metrics(Response(), text)

@@ -49,17 +49,18 @@ def _ca_14(text: TextCA) -> float:
     :param text: TextCA model
     :return: float value of CA 1.4 metric
     """
-    key_words = get_synonyms("writing")
-    key_words = set([stemmer.stem(word) for word in key_words])
-    key_words.add("writing")
+
+    word = "writ"
+
+    if not text.body:
+        return 0
 
     if not text.body:
         return 0
 
     for line in text.body:
-        for word in key_words:
-            if word in line.lower():
-                return 1
+        if word in line.lower():
+            return 1
     return 0
 
 
@@ -72,7 +73,8 @@ def _ca_15(text: TextCA) -> float:
         return 0
     
     for line in text.body:
-        if env.VACANCY_NAME.lower() in line.lower():
+        if env.VACANCY_NAME[0].lower() in line.lower()\
+        or env.VACANCY_NAME[1].lower() in line.lower():
             return 1
     return 0
 
