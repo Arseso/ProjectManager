@@ -1,0 +1,16 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Data Scientist position at ABC Analytics. With my experience as a Business Analyst at XYZ Corporation and my current role as a Data Scientist at DEF Analytics, I have developed a strong foundation in analytics and problemsolving.
+
+I am passionate about solving business challenges and developing client relationships. In my previous roles, I have successfully led project teams and delivered highquality performance. I have a solid academic background with a bachelor's degree in Business Analytics and I am currently pursuing a graduate degree in a quantitative discipline.
+
+I have experience in collecting stakeholder requirements, formulating analytics approaches, and presenting results to executive clients. I am bilingual in French and English, which allows me to effectively communicate with clients in Montreal.
+
+I have a strong foundation in analytical programming and data visualization tools such as SQL, R, Python, Tableau, and PowerBI. My excellent communication and presentation skills enable me to effectively communicate the results of my analysis to business executives.
+
+I am excited about the opportunity to join ABC Analytics and contribute to the transformation of data into actionable insights. Thank you for considering my application.
+
+Sincerely,
+John Smith

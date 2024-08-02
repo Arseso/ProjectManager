@@ -1,0 +1,3 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+I am applying for the System Administrator position at Netflix. My extensive experience with Arch Linux, Gentoo, and Salt, as well as my proficiency in C++, makes me a strong candidate for this role. I am excited about the opportunity to bring my unique skill set to your team.

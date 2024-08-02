@@ -1,0 +1,3 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+I am excited to apply for the Senior Java Developer position at GHI Corp. I have over 4 years of experience in Java development, with a strong knowledge of Java, Spring, Hibernate, SQL, and Docker. I am known for my ability to learn new technologies quickly and for my strong problem-solving skills. In my current role at ABC Corp, I have successfully delivered several projects on time and within budget. I am confident that my skills and experience make me an excellent candidate for this position. Thank you for considering my application.

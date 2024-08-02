@@ -1,0 +1,3 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+I am writing to express my interest in the Data Scientist position at Amazon. With a Master's degree in Data Science and experience as a Data Analyst at Facebook and a Data Scientist at Twitter, I have a strong foundation in data analysis and model development. I am proficient in Python, R, and SQL and have a deep understanding of machine learning algorithms. I am passionate about using data to drive strategic decision making and am excited about the opportunity to apply my skills at Amazon. Thank you for considering my application.

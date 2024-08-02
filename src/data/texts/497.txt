@@ -1,0 +1,3 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+I am interested in the Senior Machine Learning Engineer role at MNO Corp. I have seven years of experience in machine learning and a Master's degree in Artificial Intelligence. I am proficient in Python, TensorFlow, Scikit-Learn, and PyTorch. In my current role at MNO Corp, I lead a team of engineers in developing machine learning models that drive business value. I am confident that my technical skills and leadership abilities make me a strong candidate for this role.

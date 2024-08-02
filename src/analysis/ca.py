@@ -3,7 +3,6 @@ from res.materials_CA import get_synonyms
 from preprocessing.ca import text_to_model_ca
 import env as env
 import nltk.stem.snowball as snowball
-import re
 
 stemmer = snowball.SnowballStemmer("english")
 
@@ -21,7 +20,7 @@ def _ca_11(text: TextCA) -> float:
     :param text: TextCA model
     :return: float value of CA 1.1 metric
     """
-    return 1 if len(text.greeting_name) > 0 and not text.greeting_name.lower() in ["sir", "madam", "sir or madam"] else 0
+    return 1 if text.greeting_name else 0
 
 
 def _ca_12(text: TextCA) -> float:
@@ -37,6 +36,8 @@ def _ca_13(text: TextCA) -> float:
     :param text: TextCA model
     :return: float value of CA 1.3 metric
     """
+    if not text.body:
+        return 0
     for line in text.body:
         if env.COMPANY_NAME.lower() in line.lower():
             return 1
@@ -51,6 +52,9 @@ def _ca_14(text: TextCA) -> float:
 
     word = "writ"
 
+    if not text.body:
+        return 0
+
     for line in text.body:
         if word in line.lower():
             return 1
@@ -62,7 +66,9 @@ def _ca_15(text: TextCA) -> float:
     :param text: TextCA model
     :return: float value of CA 1.5 metric
     """
-
+    if not text.body:
+        return 0
+    
     for line in text.body:
         if env.VACANCY_NAME[0].lower() in line.lower()\
         or env.VACANCY_NAME[1].lower() in line.lower():
@@ -80,6 +86,9 @@ def _ca_16(text: TextCA) -> float:
         for syn in get_synonyms(word):
             key_words.add(stemmer.stem(syn))
 
+    if not text.body:
+            return 0
+
     for line in text.body:
         for word in key_words:
             if word in line.lower():
@@ -93,6 +102,10 @@ def _ca_17(text: TextCA) -> float:
     :return: float value of CA 1.7 metric
     """
     key_words = get_synonyms("thanks")
+
+    if not text.body:
+        return 0
+
     for line in text.body:
         for word in key_words:
             if stemmer.stem(word) in line.lower():

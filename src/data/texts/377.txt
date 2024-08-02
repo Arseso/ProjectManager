@@ -1,0 +1,3 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+I am writing to express my interest in the Senior Java Developer position at eBay. I have five years of experience in Java and Spring Boot. I have worked as a Java Developer at XYZ and a Senior Java Developer at ABC. I am proficient in Java, Spring Boot, Microservices, SQL, and AWS. I hold a Bachelor's degree in Computer Science. I am excited about this opportunity and look forward to discussing my candidacy further.

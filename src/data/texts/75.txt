@@ -1,0 +1,16 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Data Scientist position at ABC Corporation. With my strong background in data analysis and machine learning, I believe I am wellsuited for this role.
+
+In my current position as a Data Scientist at DEF Corporation, I have gained extensive experience in utilizing AWS database and messaging technologies to develop and implement data solutions. I have successfully collaborated with crossfunctional teams to deliver projects in the finance industry, demonstrating my ability to work effectively both independently and collaboratively.
+
+I have a solid foundation in regression, classification, clustering, and dimension reduction algorithms, and I am skilled in developing and implementing machine learning models for predictive modeling. My expertise in natural language processing and proficiency in Python programming have allowed me to effectively analyze and extract insights from various datasets. Additionally, I have experience using BI tools such as QuickSight and AWS Sagemaker.
+
+I hold a Bachelor's degree in Computer Science and I am an AWS Certified Machine Learning Specialty professional. I am confident that my technical skills, strong communication abilities, and problemsolving mindset make me a valuable asset to your team.
+
+Thank you for considering my application. I look forward to the opportunity to discuss how my skills and qualifications align with the requirements of the Data Scientist role at ABC Corporation.
+
+Sincerely,
+John Smith

@@ -16,11 +16,12 @@ def _get_plain_text(body: list[str]) -> str:
     :param body: list of strings
     :return: plain text
     """
-    return " ".join(body)
+    return " ".join(body) if body else None
 
 
 def _get_sentences_from_plain(plain_text: str) -> list[str]:
-    return sent_tokenize(plain_text)
+
+    return sent_tokenize(plain_text) if plain_text else None
 
 
 def _make_trees(sentences: list[str]) -> list[list[Word]]:
@@ -28,6 +29,9 @@ def _make_trees(sentences: list[str]) -> list[list[Word]]:
     :param sentences: list of str sentences
     :return: list of sentences, where each sentence is a list of Word objects
     """
+    if not sentences:
+        return None
+
     spacy_nlp = spacy.load('en_core_web_sm')
     trees = []
     for sentence in sentences:
@@ -73,6 +77,8 @@ def voc_1_preprocessed_text(text: str, stemming: bool = True) -> tuple[list[str]
     :param stemming: enable stemming
     :return: preprocessed for VOC1 list of words, count of words
     """
+    if not text:
+        return None, 0
     tokens = word_tokenize(text=text)
 
     tokens = [token for token in tokens if re.match(r'^[A-Za-z]+$', token)]
@@ -94,6 +100,9 @@ def voc_2_preprocessed_text(text: TextVOC) -> tuple[list[str], int]:
     :param text: TextVOC model
     :return: preprocessed for VOC2 list of words, count of words
     """
+    if not text.body_as_plain_text: 
+        return None, 0
+
     tokens = word_tokenize(text=text.body_as_plain_text)
 
     tokens = [token for token in tokens if re.match(r'^[A-Za-z]+$', token)]

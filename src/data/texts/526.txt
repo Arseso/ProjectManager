@@ -1,0 +1,3 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+I am a seasoned professional with over 10 years of experience in the field of Data Science. I have a proven track record of using data to drive business decisions and have extensive experience in using Python, R, SQL, Hadoop, and Spark. I have a PhD in Computer Science and I am confident that my skills and experiences make me a strong candidate for the Senior Data Scientist position at Apple. I am excited about the opportunity to work with a diverse team and contribute my skills and knowledge to help Apple continue to be a leader in the tech industry.

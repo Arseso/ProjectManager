@@ -1,0 +1,3 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+I am interested in the Senior Java Developer position at JKL Corp. I have 7 years of experience in the field, including 2 years as a Senior Java Developer. My skills include Java, Spring, Hibernate, SQL, and REST APIs. I am confident that I can contribute to your team.

@@ -1,0 +1,16 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Data Scientist position at NeuroMod Solutions. With my background in neuroscience and experience in data analysis, I believe I am wellsuited for this role.
+
+In my current position as a Data Scientist at DEF Corporation, I have gained valuable experience in applying machine learning and statistical methods to analyze complex datasets. I have also developed strong coding skills in Python, which will be essential for extracting insights from neurophysiology data.
+
+During my time as a Research Assistant at ABC University, I had the opportunity to work with electrophysiology data, specifically focusing on the peripheral nervous system. This experience has provided me with a solid foundation in neuroscience electrophysiology recording and analysis.
+
+I am confident that my skills in data analysis, combined with my knowledge of neuroscience and electrophysiology, make me a strong candidate for this position. I am excited about the opportunity to contribute to the research strategy of preclinical trials and integrate electrophysiological and machine learning insights into new research directions.
+
+Thank you for considering my application. I look forward to the opportunity to discuss how my skills and qualifications align with the needs of NeuroMod Solutions.
+
+Sincerely,
+John Smith

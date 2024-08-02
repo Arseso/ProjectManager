@@ -1,0 +1,16 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Data Scientist position at Snapcommerce. With my strong knowledge and experience in SQL, Python, and Git, as well as my expertise in modern BI/Analytic tools such as Looker, Snowflake, and dbt, I believe I would be a valuable asset to your team.
+
+Throughout my career as a Data Analyst at ABC Company and currently as a Data Scientist at XYZ Company, I have successfully performed analyses of rich datasets to track feature usage and performance, identify potential gaps and opportunities, and make recommendations. My strong communication skills have allowed me to effectively collaborate with multiple teams and stakeholders, both independently and within a team.
+
+I am also experienced in using user flow tracking tools such as Amplitude, Google Analytics, and Heap to analyze web data and provide valuable insights. Additionally, I am eager to contribute to the continued growth of Snapcommerce through Learning & Development initiatives, Diversity & Inclusion events, and Lunch & Learn opportunities.
+
+I am confident that my skills, qualifications, and passion for data science make me a strong fit for the Data Scientist role at Snapcommerce. I am excited about the opportunity to contribute to your hyper-growth culture and grow into a leadership role.
+
+Thank you for considering my application. I look forward to the opportunity to discuss how my skills and experience align with your needs.
+
+Sincerely,
+John Smith
