@@ -1,0 +1,3 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+I am thrilled to apply for the Senior Machine Learning Engineer position at IBM. My experience at Microsoft has allowed me to develop a deep understanding of machine learning algorithms and tools, and I have a proven track record of applying this knowledge to solve complex problems. I am proficient in Python and have extensive experience with TensorFlow, Keras, and PyTorch. I am confident that my skills and experience make me a strong fit for this role.

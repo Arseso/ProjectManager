@@ -1,0 +1,16 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Data Scientist position at ABC Data Solutions. With over six years of experience in data management disciplines, including data integration, modeling, and optimization, I am confident in my ability to contribute to your team's success.
+
+Throughout my career, I have developed excellent communication and influencing skills, allowing me to effectively engage both data engineers and business partners to achieve targeted outcomes. I have also gained experience in data integration, data migration, and master data management, as well as proficiency in Power BI, Snowflake, and Oracle FAW.
+
+I am constantly curious about modern digital technologies and strive to stay current on industry trends. My knowledge of database platforms, database design, and experience using structured query language further enhance my ability to analyze and access data sets.
+
+In addition to my technical skills, I possess strong analytical and problemsolving abilities, with a keen attention to detail. I am a team player and thrive in collaborative environments, while also being able to exercise independent judgment when necessary.
+
+Thank you for considering my application. I am excited about the opportunity to contribute to the success of ABC Data Solutions as a Data Scientist. I look forward to discussing how my skills and qualifications align with your needs.
+
+Sincerely,
+John Smith

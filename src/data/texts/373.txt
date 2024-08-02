@@ -1,0 +1,3 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+I am writing to express my interest in the Senior Database Administrator position at Tesla. My experience with Apache Kafka, Apache Cassandra, and Apache HBase, as well as my proficiency in Ruby, makes me a strong candidate for this role. I am excited about the opportunity to bring my unique skill set to your team.

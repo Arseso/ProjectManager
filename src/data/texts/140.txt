@@ -1,0 +1,16 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Data Scientist position at XYZ Corporation. With my strong background in SAP systems, ETL processes, and data governance, I believe I am well-suited for this role.
+
+In my previous role as a Data Analyst at ABC Company, I gained valuable experience in SAP Data Migration Projects, including ETL processes within ERP systems and Modern Analytic platforms. I have successfully built data governance workflows for managing master data in SAP MDG solution and have a strong interest in bringing Artificial Intelligence and Advanced Analytics to SAP applications.
+
+I am highly skilled in data quality management activities such as data profiling, data cleansing, and master data management. My ability to work independently and collaborate with clients to solve complex problems has been instrumental in my past and current roles.
+
+I hold a Bachelor's degree in Computer Science and have over 2 years of experience in SAP Data Migration Projects. I am confident that my skills and qualifications make me a strong fit for the Data Scientist position at XYZ Corporation.
+
+Thank you for considering my application. I look forward to the opportunity to discuss how my skills and experience align with the needs of XYZ Corporation.
+
+Sincerely,
+John Smith

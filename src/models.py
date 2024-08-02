@@ -38,9 +38,11 @@ class Response:
     # Metrics
 
     UNIQ_W_PROPORTION: float = 0
-    ORTHOGRAPHY_ERRORS: int = 0
-    COLLOQUIAL_WORDS: int = 0
-    COLLOCATION_ERRORS: int = 0
+    ORTHOGRAPHY_ERRORS: float = 0
+    COLLOQUIAL_WORDS: float = 0
+    COLLOCATION_ERRORS: float = 0
+
+    CEFR_PROPORTIONS: tuple = None
 
     def values(self, module: str = None, as_num = False) -> list[str]:
         """
@@ -100,7 +102,7 @@ class Response:
         # Metrics
 
         elif module == "metrics":
-            return [self.UNIQ_W_PROPORTION, self.ORTHOGRAPHY_ERRORS, self.COLLOQUIAL_WORDS, self.COLLOCATION_ERRORS]
+            return [self.UNIQ_W_PROPORTION, self.ORTHOGRAPHY_ERRORS, self.COLLOQUIAL_WORDS, self.COLLOCATION_ERRORS, *self.CEFR_PROPORTIONS]
 
 
 @dataclass

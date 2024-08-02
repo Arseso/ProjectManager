@@ -1,0 +1,3 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+I am a highly skilled and experienced Generative AI Engineer with a PhD in Artificial Intelligence. I have worked with Google and Amazon, where I developed and implemented GAN models. My skills include Python, Tensorflow, and GANs. I am interested in the Generative AI Engineer position at Microsoft and I am confident that my skills and experiences make me a strong candidate for this role. I am excited about the opportunity to contribute to Microsoft's AI initiatives and help shape the future of AI technology.

@@ -1,0 +1,14 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Senior Data Analyst position at Green Earth Solutions. With my strong background in data analytics and experience in interdisciplinary teams, I believe I am an ideal candidate for this role.
+
+In my current position as a Senior Data Scientist at DEF Solutions, I have gained extensive experience in data analysis, machine learning, and reporting. I have successfully collaborated with interdisciplinary teams to solve complex problems and deliver timely and accurate reports. My proficiency in Python and SQL has allowed me to develop and implement machine learning models, while my expertise in Microsoft Excel and Google Sheets has enabled me to create insightful dashboards and reports.
+
+I am particularly excited about the opportunity to contribute to Green Earth Solutions' mission of fighting climate change through reforestation and carbon removals. My passion for environmental sustainability aligns perfectly with the company's goals, and I am eager to apply my skills and knowledge to support the reforestation team and ensure the success of carbon sequestration projects.
+
+Thank you for considering my application. I am confident that my experience, skills, and qualifications make me a strong fit for this position. I look forward to the opportunity to discuss how I can contribute to Green Earth Solutions' mission further.
+
+Sincerely,
+John Smith

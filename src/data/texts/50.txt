@@ -1,0 +1,16 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Senior Data Scientist  NLP position at XYZ Data Solutions. With a strong background in data analysis and machine learning, I believe I am wellsuited for this role.
+
+In my current position as a Data Scientist at XYZ Data Solutions, I have gained extensive experience in natural language processing and machine learning techniques. I have successfully applied these techniques to improve service delivery and customer experience. Additionally, my proficiency in Python, R, and other statistical computer languages has allowed me to manipulate and draw insights from large datasets.
+
+I hold a Masters degree in Computer Science, which has provided me with a solid foundation in statistical analysis and data modeling. I am also wellversed in using machine learning libraries such as Scikitlearn and TensorFlow, as well as NLP libraries like NLTK and spaCy.
+
+Furthermore, my strong problemsolving skills and excellent communication abilities have enabled me to effectively collaborate with stakeholders across different teams. I am confident that my qualifications and experience make me a valuable asset to XYZ Data Solutions.
+
+Thank you for considering my application. I look forward to the opportunity to discuss how my skills and expertise can contribute to the success of XYZ Data Solutions.
+
+Sincerely,
+John Smith

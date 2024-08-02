@@ -1,0 +1,3 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+I am excited to apply for the Senior Java Developer position at Netflix. I have over five years of experience in Java and Spring Boot and have worked as a Java Developer at XYZ and a Senior Java Developer at ABC. I have a strong understanding of Java, Spring Boot, Microservices, SQL, and AWS. I hold a Master's degree in Computer Science. I am eager to bring my technical skills and passion for software development to Netflix.

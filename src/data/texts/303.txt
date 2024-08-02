@@ -1,0 +1,16 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Data Scientist position at XYZ Corporation. With my strong background in data analysis and visualization, I believe I am wellsuited for this role.
+
+In my current position as a Data Scientist at XYZ Corporation, I have successfully utilized my advanced computer skills and excellent communication abilities to work with stakeholders and identify future solutions. I have also been responsible for capturing requirements, analyzing data, and creating datarich dashboards using Power BI.
+
+My experience in a high hazard environment and knowledge of process safety have allowed me to effectively manage competing priorities and troubleshoot issues. I am highly analytical and resultsdriven, always striving for higher business performance.
+
+I hold a Bachelor's degree in Computer Science and have a strong understanding of data analysis and visualization tools. My expertise in Power BI, coupled with my knowledge of process safety, make me a valuable asset to your team.
+
+Thank you for considering my application. I look forward to the opportunity to discuss how my skills and qualifications align with the needs of XYZ Corporation.
+
+Sincerely,
+John Smith

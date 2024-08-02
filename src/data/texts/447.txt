@@ -1,0 +1,3 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+I am excited to apply for the Data Scientist position at Facebook. My past experience includes working as a Data Analyst at Amazon and a Data Scientist at Google. I am proficient in Python, R, SQL, machine learning, and deep learning. I hold a PhD in Data Science. I am confident that my skills and qualifications make me a strong candidate for this position.

@@ -1,0 +1,3 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+I am applying for the Senior Java Developer position at VWX Inc. I have a total of 7 years of experience in Java development, including 2 years as a Senior Java Developer. I have a strong understanding of Java, Spring, Hibernate, SQL, and REST APIs. I am confident that my skills and experience make me a strong candidate for this position.

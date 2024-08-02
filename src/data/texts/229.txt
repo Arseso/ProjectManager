@@ -1,0 +1,3 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+I am writing to express my interest in the Senior Database Administrator position at Microsoft. My experience with Riak, Neo4j, and Redis, as well as my proficiency in Scala, makes me a strong candidate for this role. I am excited about the opportunity to bring my unique skill set to your team.
