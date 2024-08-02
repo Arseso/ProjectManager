@@ -55,7 +55,7 @@ def _voc_1(text: TextVOC) -> tuple[float, float]:
 def _voc_2(text: TextVOC) -> tuple[float, int, int]:
     """
     :param text: TextCA model
-    :return: float value of VOC 2 metric, int orthography errors, int colloquial words
+    :return: float value of VOC 2 metric, float propotion orthography errors by sentences, float colloquial words proportion
     """
     orthography_errors = get_orthography_errors(text=text)
     preprocessed_text, words_count = voc_2_preprocessed_text(text=text)
@@ -67,11 +67,11 @@ def _voc_2(text: TextVOC) -> tuple[float, int, int]:
         if token in COLLOQUIAL_WORDS:
             colloquial_count += 1
     if orthography_errors <= VOC2_PLUS_ORTH_THRESHOLD and colloquial_count/words_count <= VOC2_PLUS_COLL_PROPORTION:
-        return 1, orthography_errors, colloquial_count
+        return 1, orthography_errors/len(text.body_as_sentences), colloquial_count/len(preprocessed_text)
     if orthography_errors <= VOC2_MINUS_ORTH_THRESHOLD and colloquial_count/words_count <= VOC2_MINUS_COLL_PROPORTION:
-        return 0.5, orthography_errors, colloquial_count
+        return 0.5, orthography_errors/len(text.body_as_sentences), colloquial_count/len(preprocessed_text)
     else:
-        return 0, orthography_errors, colloquial_count
+        return 0, orthography_errors/len(text.body_as_sentences), colloquial_count/len(preprocessed_text)
 
 
 def _voc_3(text: TextVOC) -> tuple[float, int]:
@@ -85,10 +85,11 @@ def _voc_3(text: TextVOC) -> tuple[float, int]:
 
     if not text.sentences_as_trees: 
         return 0, 0
-    
+    collocations = 0
     stopwords = set(nltk.corpus.stopwords.words('english'))
     for i in tqdm.trange(len(text.sentences_as_trees), desc="VOC3; Sentences processed"):
         for word_object in text.sentences_as_trees[i]:
+            collocations+=1
             head = word_object.head.lower()
             if not re.match(r'^[a-z]+$', head) or head in stopwords or head == env.COMPANY_NAME:
                 continue
@@ -103,9 +104,9 @@ def _voc_3(text: TextVOC) -> tuple[float, int]:
                     errors_df.loc[len(errors_df.index)] = [head, child]
                     errors += 1
     errors_df.to_csv("./.cache/collocation_errors.csv", index=False, mode="a")
-    if errors > 2: return 0, errors
-    if errors > 0: return 0.5, errors
-    return 1, errors
+    if errors > 2: return 0, errors/collocations
+    if errors > 0: return 0.5, errors/collocations
+    return 1, errors/collocations
 
 
 def get_voc_metrics(resp: Response, text: list[str]) -> Response:
