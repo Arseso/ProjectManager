@@ -1,0 +1,14 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Senior Data Scientist position at XYZ Bank. With my strong background in data analysis and expertise in SAS and SAS Miner, I believe I am well-suited for this role.
+
+In my current position at DEF Corporation, I have successfully developed and implemented financial crime detection models, resulting in significant improvements in risk management. My experience in fighting financial crime, combined with my knowledge of modeling techniques such as decision trees and neural networks, has allowed me to effectively analyze massive data and extract valuable insights.
+
+I am also fluent in both French and English, which enables me to effectively communicate complex information to stakeholders. Additionally, my excellent knowledge of unsupervised approaches and commitment to ensuring data quality and integrity make me a strong candidate for this position.
+
+I am excited about the opportunity to join XYZ Bank and contribute to its mission of having a positive impact on people's lives. Thank you for considering my application. I look forward to the possibility of discussing how my skills and qualifications align with your needs.
+
+Sincerely,
+John Smith

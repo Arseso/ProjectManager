@@ -1,0 +1,14 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Data Scientist, Customer & Marketing Analytics position at XYZ Financial Group. With my strong background in analytics, expertise in data manipulation and modeling, and excellent communication skills, I believe I am a perfect fit for this role.
+
+In my current position as a Data Scientist at GHI Company, I have successfully analyzed acquisition performance across channels, identified improvement opportunities, and developed customer segmentation strategies. I have also worked on analyzing the customer development life-cycle to improve customer retention and growth. My expertise in reporting, visualization, and predictive modeling using tools such as SQL, Python, R, and SAS has allowed me to provide valuable insights and recommendations to drive revenue growth.
+
+I hold a Masters level education in a STEM field, which has equipped me with a strong foundation in analytical concepts and tools. I am a self-learner and have independently studied new concepts and tools to stay updated with the latest trends in the field.
+
+I am excited about the opportunity to join XYZ Financial Group and contribute to revolutionizing financial services for the benefit of Canadians. Thank you for considering my application. I look forward to the opportunity to discuss how my skills and qualifications align with your requirements.
+
+Sincerely,
+John Smith

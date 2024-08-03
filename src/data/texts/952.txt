@@ -1,0 +1,16 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Data Scientist - Computational Chemistry position at Stratuscent. With my background in computational chemistry and experience in data analysis, I believe I would be a valuable addition to your team.
+
+During my time as a Research Scientist at a pharmaceutical company, I developed a strong understanding of computational modeling and simulations of materials and composites. I have a deep knowledge of thermodynamics, Schrodinger equations, wave functions, and molecular structure of organic materials and composite sensor materials. Additionally, I have proven experience in CFD simulations, molecular modeling, QSAR modeling, and Monte Carlo simulation techniques.
+
+In my current role as a Data Analyst at a technology startup, I have honed my data science skills and programming abilities in Python and C++. I have also gained experience in collaborating with cross-functional teams, documenting work and ideas, and effectively communicating complex concepts.
+
+I am excited about the opportunity to work on the technical challenges at Stratuscent, particularly in the areas of synthesis and printing of polymer-based functional inks and the development of thin films of chemical sensing materials. I am confident that my skills and qualifications make me a strong fit for this role.
+
+Thank you for considering my application. I look forward to the opportunity to discuss how my experience and expertise can contribute to the growth and development of Stratuscent's products.
+
+Sincerely,
+John Smith
