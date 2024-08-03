@@ -1,3 +1,0 @@
-To; google_recruitment@google.com
-Subject: Application for Project Manager Position at Google
-I am a dedicated AI Engineer with a focus on generative models. I have over 3 years of experience in the field, having worked at Twitter and Instagram. I have a solid understanding of GANs and machine learning, and I am proficient in Python, TensorFlow, and Keras. I am eager to bring my skills and experience to the Generative AI Engineer position at Facebook. I am confident that I can contribute to your team and help drive your AI initiatives forward.

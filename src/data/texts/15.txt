@@ -1,3 +1,0 @@
-To; google_recruitment@google.com
-Subject: Application for Project Manager Position at Google
-I am eager to bring my expertise in machine learning and computer science to the Machine Learning Engineer position at Facebook. With a PhD in Computer Science and experience as a Software Engineer at Microsoft and a Machine Learning Engineer at Amazon, I have a strong foundation in software development and model development. I am proficient in Python and have experience with TensorFlow and PyTorch. I am passionate about leveraging machine learning to solve complex problems and am excited about the potential to do so at Facebook. Thank you for considering my application.
