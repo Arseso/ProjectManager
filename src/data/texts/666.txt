@@ -1,3 +1,0 @@
-To; google_recruitment@google.com
-Subject: Application for Project Manager Position at Google
-I am a Data Engineer with a strong background in data management and analysis. I am proficient in Python, SQL, Hadoop, and Spark, and I have a master's degree in Data Science. I am confident that my skills and experience make me an excellent candidate for this position.

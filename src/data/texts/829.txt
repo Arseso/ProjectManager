@@ -1,0 +1,14 @@
+To; google_recruitment@google.com
+Subject: Application for Project Manager Position at Google
+Dear Hiring Manager,
+
+I am writing to express my interest in the Threat Monitoring - Data Scientist position at XYZ Bank. With a strong background in data analysis and machine learning, I believe I am well-suited for this role.
+
+In my current position as a Data Scientist at XYZ Corporation, I have gained experience in building scalable solutions for data processing and analysis. I have also developed expertise in detecting and monitoring potential threats using machine learning techniques. My strong foundation in software engineering and core computer science allows me to effectively develop and implement data frameworks to measure and monitor risks.
+
+I hold a Bachelor's degree in Computer Science and have a certification in data science. My past experience as a Data Analyst at ABC Corporation has provided me with a solid understanding of risk management and regulatory compliance. Additionally, my strong problem-solving and communication skills enable me to effectively collaborate with cross-functional teams.
+
+I am excited about the opportunity to contribute to XYZ Bank's mission and be part of a purpose-driven winning team. Thank you for considering my application. I look forward to the possibility of discussing how my skills and qualifications align with the requirements of the role.
+
+Sincerely,
+John Smith
