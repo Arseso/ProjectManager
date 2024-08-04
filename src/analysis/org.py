@@ -20,18 +20,17 @@ def _org_22(text: TextCA) -> float:
     return 1 if text.greeting_name else 0
 
 
+def _org_24(text: TextCA) -> float:
+    for line in text.body:
+        if 'thank' in line.lower():
+            return 1
+    return 0
+
+
 def _org_23(text: TextCA) -> float:
     """
     :param text: TextCA model
     :return: float value of ORG 2.3 metric
-    """
-    return 1 if text.greeting_name else 0
-
-
-def _org_24(text: TextCA) -> float:
-    """
-    :param text: TextCA model
-    :return: float value of ORG 2.4 metric
     """
     if not text.body:
         return 0
