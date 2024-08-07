@@ -44,8 +44,6 @@ class Response:
 
     CEFR_PROPORTIONS: tuple = None
 
-    CEFR_PROPORTIONS: tuple = None
-
     def values(self, module: str = None, as_num = False) -> list[str]:
         """
         :param module: "CA", "ORG", "VOC", "GR", "metrics"

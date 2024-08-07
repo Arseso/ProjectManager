@@ -68,6 +68,11 @@ def main():
 
         _write_to_csv(filename, response)
 
+def get_merics(text: list[str]) -> Response:
+    response = get_ca_metrics(Response(), text)
+    response = get_org_metrics(response, text)
+    response = get_voc_metrics(response, text)
+    return response
 
 if __name__ == '__main__':
     main()
