@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Загрузка текстов{% endblock %}
+
+{% block content %}
+    <h1>Загрузить текстовые файлы</h1>
+    <form action="/operations/submit" method="post" enctype="multipart/form-data">
+        <label for="file">Выберите текстовые файлы:</label>
+        <input type="file" id="file" name="files" accept=".txt" multiple>
+        <br><br>
+        <input type="submit" value="Загрузить">
+    </form>
+{% endblock %}

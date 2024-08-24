@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Letter Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .active {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="/" class="{% if active_tab == 'home' %}active{% endif %}">Домашняя страница</a>
+    <a href="/texts/upload" class="{% if active_tab == 'upload' %}active{% endif %}">Загрузка текстов</a>
+    <a href="/texts" class="{% if active_tab == 'texts' %}active{% endif %}">Результаты обработки</a>
+</div>
+
+<div class="content">
+    {% block content %}
+    <!-- Здесь будет основное содержимое страницы -->
+    {% endblock %}
+</div>
+
+</body>
+</html>

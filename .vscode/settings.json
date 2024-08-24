@@ -4,5 +4,6 @@
         "test"
     ],
     "python.testing.autoTestDiscoverOnSaveEnabled": true,
-    "python.envFile": "${workspaceFolder}/.env"
+    "python.envFile": "${workspaceFolder}/.env",
+    "docwriter.progress.trackFunctions": false
 }

@@ -5,16 +5,9 @@ class Status(BaseModel):
     is_complited: bool
     description: str
     
-
-class Student(BaseModel):
-    name: str
-    surname: str
-    group: str | None
-    
-
 class Text(BaseModel):
-    id: int
-    student: Student | None
+    id: int | None
+    filename: str
     text: list[str]
     status: Status
     created_at: datetime
