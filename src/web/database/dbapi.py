@@ -7,3 +7,4 @@ async def connection() -> asyncpg.connection:
                              user=config.DB_USER,
                              password=config.DB_PASS,
                              database=config.DB_NAME)
+    return connection

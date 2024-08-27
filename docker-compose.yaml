@@ -1,0 +1,50 @@
+networks:
+  tg_bot:
+
+volumes:
+  bot_pg:
+  pgadmin:
+
+services:
+  pg:
+    image: postgres
+    environment:
+      POSTGRES_DB: $DB_NAME
+      POSTGRES_USER: $DB_USER
+      POSTGRES_PASSWORD: $DB_PASS
+    networks:
+      - tg_bot
+    volumes:
+      - bot_pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin"]
+  web:
+    image: pmanager
+    environment:
+      DB_NAME: $DB_NAME
+      DB_USER: $DB_USER
+      DB_PORT: $DB_PORT
+      DB_PASS: $DB_PASS
+      DB_HOST: $DB_HOST
+      BOT_TOKEN: $TOKEN
+    networks:
+      - web
+    volumes:
+      - ./out/:/app/out/
+    depends_on:
+      pg:
+        condition: service_healthy
+  pg_admin:
+    image: dpage/pgadmin4
+    networks:
+      - web
+    environment:
+      PGADMIN_DEFAULT_EMAIL: adm@adm.ru
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - 127.0.0.1:80:80
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    depends_on:
+      pg:
+        condition: service_healthy
