@@ -6,6 +6,7 @@ import nltk
 
 from models import TextVOC, Word
 from preprocessing.ca import text_to_model_ca
+from res.materials_VOC import CEFR_STOPWORDS
 
 nltk.download('punkt')
 
@@ -82,6 +83,11 @@ def voc_1_preprocessed_text(text: str, stemming: bool = True) -> tuple[list[str]
     tokens = word_tokenize(text=text)
 
     tokens = [token for token in tokens if re.match(r'^[A-Za-z]+$', token)]
+    tokens_wout_stopwords = []
+    for token in tokens:
+        if token not in CEFR_STOPWORDS:
+            tokens_wout_stopwords.append(token)
+    tokens = tokens_wout_stopwords
     words_count = len(tokens)
     stopwords = set(nltk.corpus.stopwords.words('english'))
     unique_filtered_tokens = set([token for token in tokens if token not in stopwords])

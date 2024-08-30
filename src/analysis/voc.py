@@ -4,7 +4,6 @@ from collections import Counter
 import nltk
 import pandas as pd
 import tqdm
-from nltk.stem import WordNetLemmatizer
 import env
 from env import VOC2_PLUS_ORTH_THRESHOLD, VOC2_PLUS_COLL_PROPORTION, \
     VOC2_MINUS_COLL_PROPORTION, VOC2_MINUS_ORTH_THRESHOLD, VOC1_PLUS_UNIQUE_PROPORTION
@@ -36,7 +35,6 @@ def _voc_1(text: TextVOC) -> tuple[float, float]:
     for token in undefined:
         if token in cerf_dict.headword.values:
             cerf_levels.append(cerf_dict[cerf_dict.headword == token].CEFR.values[0])
-        else:
             cerf_levels.append("A1")
     cerf_counter = Counter(cerf_levels)
     if len(preprocessed_text) / words_count >= VOC1_PLUS_UNIQUE_PROPORTION:
