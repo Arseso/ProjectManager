@@ -1,7 +1,7 @@
 import csv
 import os
 from typing import Tuple, List
-
+import requests
 from models import Response
 from analysis.ca import get_ca_metrics
 from analysis.org import get_org_metrics
@@ -60,13 +60,20 @@ def main():
     #     "Subject: Application for Project Manager Position at Google",
     #     "Dear Hiring Manager, I am writing to express my interest in the Mobile App Developer position at XYZ Company. I have a Master's degree in Computer Science and 3 years of experience in mobile app development. I am proficient in iOS, Android, Swift, Java, and Kotlin. I have excellent communication skills and the ability to work independently. I believe that my skills and qualifications make me a strong fit for this role. Thank you for considering my application. Best regards, Jane Doe"
     # ]]
+    errors = 0
     for filename, text in zip(files, texts):
         # Getting results
-        response = get_ca_metrics(Response(), text)
-        response = get_org_metrics(response, text)
-        response = get_voc_metrics(response, text)
+        try:
+            response = get_ca_metrics(Response(), text)
+            response = get_org_metrics(response, text)
+            response = get_voc_metrics(response, text)
 
-        _write_to_csv(filename, response)
+            _write_to_csv(filename, response)
+        except requests.exceptions.JSONDecodeError:
+            errors+=1
+            continue
+    
+    print(f"ERRORS: {errors}")
 
 
 if __name__ == '__main__':
