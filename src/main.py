@@ -6,11 +6,14 @@ from models import Response
 from analysis.ca import get_ca_metrics
 from analysis.org import get_org_metrics
 from analysis.voc import get_voc_metrics
+import pandas as pd
 
 RESP_CSV_FILENAME = "./data/responses.csv"
 RESP_NUM_CSV_FILENAME = "./data/responses_as_num.csv"
 TEXTS_DIRECTORY = "./data/texts"
+XLSX_FILE = "./data/letters.xlsx"
 
+FROM_XLSX = True
 
 def _get_texts() -> tuple[list[str], list[list[str]]]:
     """
@@ -24,6 +27,11 @@ def _get_texts() -> tuple[list[str], list[list[str]]]:
             filenames.append(filename)
             texts.append(text)
     return filenames, texts
+
+def _get_from_xlsx()-> tuple[list[str], list[list[str]]]:
+    data = pd.read_excel(XLSX_FILE, sheet_name=0)
+    return data["Почта"].values, data["Текст эссе"].values
+    
 
 
 def _write_to_csv(filename: str, resp: Response) -> None:
@@ -54,12 +62,11 @@ def _write_to_csv(filename: str, resp: Response) -> None:
 
 
 def main():
-    files, texts = _get_texts()
-    # files, texts = ['393.txt'], [[
-    #     "To; google_recruitment@google.com",
-    #     "Subject: Application for Project Manager Position at Google",
-    #     "Dear Hiring Manager, I am writing to express my interest in the Mobile App Developer position at XYZ Company. I have a Master's degree in Computer Science and 3 years of experience in mobile app development. I am proficient in iOS, Android, Swift, Java, and Kotlin. I have excellent communication skills and the ability to work independently. I believe that my skills and qualifications make me a strong fit for this role. Thank you for considering my application. Best regards, Jane Doe"
-    # ]]
+    if not FROM_XLSX:
+        files, texts = _get_texts()
+    else:
+        files, texts = _get_from_xlsx()
+        
     errors = 0
     for filename, text in zip(files, texts):
         # Getting results
