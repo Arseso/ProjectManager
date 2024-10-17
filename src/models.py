@@ -42,9 +42,8 @@ class Response:
     COLLOQUIAL_WORDS: float = 0
     COLLOCATION_ERRORS: float = 0
 
-    CEFR_PROPORTIONS: tuple = None
+    CEFR_PROPORTIONS: tuple = 0, 0, 0, 0, 0, 0
 
-    CEFR_PROPORTIONS: tuple = None
 
     def values(self, module: str = None, as_num = False) -> list[str]:
         """

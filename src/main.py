@@ -66,7 +66,7 @@ def main():
         files, texts = _get_texts()
     else:
         files, texts = _get_from_xlsx()
-        
+
     errors = 0
     for filename, text in zip(files, texts):
         # Getting results
@@ -79,6 +79,9 @@ def main():
         except requests.exceptions.JSONDecodeError:
             errors+=1
             continue
+        except Exception:
+            _write_to_csv(filename, Response())
+            
     
     print(f"ERRORS: {errors}")
 
