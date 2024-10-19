@@ -30,7 +30,7 @@ def _get_texts() -> tuple[list[str], list[list[str]]]:
 
 def _get_from_xlsx()-> tuple[list[str], list[list[str]]]:
     data = pd.read_excel(XLSX_FILE, sheet_name=0)
-    return data["Почта"].values, data["Текст эссе"].values
+    return data["Почта"].values, [value.split("\n") for value in data["Текст эссе"].values]
     
 
 

@@ -58,7 +58,7 @@ def _find_name_from_greeting(text: list[str]) -> tuple[str | None, list[str]]:
     :param text: list of lines from email
     :return: recipient's name from greeting, None if didn't find one
     """
-    pattern = rf"^({PATTERN_GREETING})\s*(.*?),"
+    pattern = rf"^({PATTERN_GREETING})\s*(.*?)"
     match = re.search(pattern, text[0])
     if match:
         name = match.group(2)
